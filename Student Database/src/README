@@ -1,4 +1,4 @@
-#Student Database
+Student Database
 
 1) student_info
 This class implements Student_ interface. It contains data such as name,entry number,hostel, department
