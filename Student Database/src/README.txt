@@ -1,4 +1,4 @@
-COL-106 ASSIGNMENT 1
+#Student Database
 
 1) student_info
 This class implements Student_ interface. It contains data such as name,entry number,hostel, department
@@ -18,7 +18,7 @@ hostel() - I have created and tested a function hostel() which returns the name 
 department() - I have created and tested a function department() which returns the name of the department of the student.
 completedCredits() - I have created and tested a function which returns the credits completed by the student.
 cgpa() - I have created and tested a function which returns the cgpa of the student in string format rounded of to two decimal places.
-add(CourseGrade_ ) - I have created and tested a function which takes a course of a student as a parameter and then update student’s info as follows - 
+add(CourseGrade_ ) - I have created and tested a function which takes a course of a student as a parameter and then update studentâ€™s info as follows - 
 It increases the number of courses of student by 1 
 Add the course to the course list of student
 Update the completed credits and cgpa of the student according to the grade obtained in that course.
@@ -130,22 +130,22 @@ this gives the output in the desired manner.
 
 sortStringBubble() - I have created and tested a function which takes input as the array of String and its size and sorts the array in lexographical order. It proceeds by swapping consecutive elements so that the last element of the array is the largest element. Time complexity is O(n2) as after each iteration one element at the right side of the array gets fixed.It returns an array sorted lexographically.
 getData() - I have created and tested a function which reads two files containing info of student and courses taken by the students. After reading the student info file i create a new object of student and update its info like name,entryNo, etc which are the parameters passed in the constructor. Then this student object is added to list of all students. Then
-I check the hostel of the student. If it exists in the allHostel list i add this student object to the student’s list of that hostel.
+I check the hostel of the student. If it exists in the allHostel list i add this student object to the studentâ€™s list of that hostel.
 If it doesnt exist i make a new node of Hostel type and add it to the allHostel list. Then i add this student to the students list of this hostel.
 I do the same thing for department of the student.
 
 Then i read the second file containing the courses information.
-First i find the student object whose entry number is provided by iterating over the allStudents, after that i update the student’s information like credits, cgpa using the add function. Then using the course info provided i check in the allCourses if that course is present or not. If the course is present then i add this student in the list of students of that course. If not then i create a new node for this course and add it to the list of allCourses and then add this student to the list of students of this course
+First i find the student object whose entry number is provided by iterating over the allStudents, after that i update the studentâ€™s information like credits, cgpa using the add function. Then using the course info provided i check in the allCourses if that course is present or not. If the course is present then i add this student in the list of students of that course. If not then i create a new node for this course and add it to the list of allCourses and then add this student to the list of students of this course
 
 getData takes two files as parameters containing information about students and courses and updates the corresponding objects. It doesnt return or output anything it justs updates the info.
 
 
 answerQueries() - I have created and tested a function which answers the queries of the user.
 COURSETITLE - First i would iterate over the list of courses to find a course whose code matches with the code given in the input. Then using the name() function i print the name of the course.
-SHARE - I don’t know specifically what entity is the last string is of. So i iterate over allHostel , allDepartment, allCourses list to find the match. Then i iterate over the list of students of that entity using the Iterator<T> and store the entry number of the student in an array of String. I don’t include the entry number which is specified in the input. Then i sort the array using bubble sort function which i have mentioned earlier.
+SHARE - I donâ€™t know specifically what entity is the last string is of. So i iterate over allHostel , allDepartment, allCourses list to find the match. Then i iterate over the list of students of that entity using the Iterator<T> and store the entry number of the student in an array of String. I donâ€™t include the entry number which is specified in the input. Then i sort the array using bubble sort function which i have mentioned earlier.
 INFO - I iterate over the list of allStudents to find the student whose info is asked. I match using the entry number provided. Then i try to make an array containing the courses(string of course_name + grade) of that student. I concatenate course name and grade because a student cant have two grades for the same course. Using a switch case I convert the lettergrade type grade of the student to string. Then i store it in the array. After iterating through all the courses i bubble sort the array to obtain a lexicographical order of courses. Then first i store the basic info of student like name,entry number,etc in a string and then add the course list string at its back.    
 As the question requires me to print the output in reverse order i.e first query output at last. I use a string final_ans which takes of this. 
-final_ans = new_string+ "\n" + final_ans. The value which is already in final ans first gets shifted down by one position using ‘\n’ then i add the new string on top of that.
+final_ans = new_string+ "\n" + final_ans. The value which is already in final ans first gets shifted down by one position using â€˜\nâ€™ then i add the new string on top of that.
 answerQueries take the file as the input and then outputs the information as required in the question.
 
 
